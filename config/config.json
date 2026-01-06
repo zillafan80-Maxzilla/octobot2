@@ -1,0 +1,37 @@
+{
+    "accepted_terms": true,
+    "community": {
+        "enabled": false,
+        "local_data_identifier": "089ff082b20aa81395b7e5ce0f83ce20d133837d480eb682c4348406864f2d7c",
+        "supabase.auth.token": ""
+    },
+    "exchanges": {
+        "binance": {
+            "api-key": "gAAAAABpXH1Exf7_b8k3dC4YnPE25WGlsrt-qgVO0ZLj13A4N-AnlLXfFJsveJmiK1cuat4JpCOco1nQ8yUxsPv9uzI4AsHKJA==",
+            "api-secret": "gAAAAABpXH1ELrBhXYLqdAiHKoj3FMtKY9fKbJlMz2wvT2mKum0kq0tQbzGli_BczkyWPODqckhZQHFj3fQSj_JHSBKZJLXTJw==",
+            "enabled": true,
+            "exchange-type": "spot"
+        }
+    },
+    "local_data_identifier": "",
+    "notification": {
+        "enabled": false,
+        "global-info": false,
+        "notification-type": [],
+        "price-alerts": false,
+        "trades": false
+    },
+    "profile": "grid_trading",
+    "services": {
+        "web": {
+            "auto-open-in-web-browser": false,
+            "password": "",
+            "require-password": false
+        }
+    },
+    "trading-mode": {
+        "ArbitrageTradingMode": {
+            "enabled": true
+        }
+    }
+}

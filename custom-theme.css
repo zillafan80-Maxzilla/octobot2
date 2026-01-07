@@ -1,0 +1,385 @@
+/*
+ * OctoBot Solarized Light Theme Override
+ * 应用Solarized Light配色方案
+ * 参考: https://ethanschoonover.com/solarized/
+ */
+
+/* Solarized Light Color Variables */
+:root[data-mdb-theme=light] {
+    /* Solarized Light Base Colors */
+    --sol-base03: oklch(0.15 0.01 194);    /* 最深背景 */
+    --sol-base02: oklch(0.20 0.01 194);    /* 深色文字 */
+    --sol-base01: oklch(0.45 0.01 194);    /* 次要文字 */
+    --sol-base00: oklch(0.50 0.01 194);    /* 主要文字 */
+    --sol-base0: oklch(0.60 0.01 194);     /* 亮文字 */
+    --sol-base1: oklch(0.65 0.01 194);     /* 次亮文字 */
+    --sol-base2: oklch(0.88 0.015 45);     /* 淡米色背景 */
+    --sol-base3: oklch(0.97 0.01 44);      /* 淡黄色背景 */
+    
+    /* Solarized Accent Colors */
+    --sol-yellow: oklch(0.60 0.11 45);     /* 黄色 */
+    --sol-orange: oklch(0.50 0.09 18);     /* 橙色 */
+    --sol-red: oklch(0.50 0.12 16);        /* 红色 */
+    --sol-magenta: oklch(0.50 0.11 331);   /* 品红 */
+    --sol-violet: oklch(0.50 0.08 237);    /* 紫色 */
+    --sol-blue: oklch(0.55 0.08 205);      /* 蓝色 */
+    --sol-cyan: oklch(0.60 0.06 175);      /* 青色 */
+    --sol-green: oklch(0.60 0.11 68);      /* 绿色 */
+    --sol-tan: oklch(0.88 0.015 45);       /* 淡棕色边框 */
+    
+    /* Override MDB Primary Colors */
+    --mdb-primary: var(--sol-base02);
+    --mdb-primary-rgb: 7, 54, 66;
+    --mdb-primary-500: var(--sol-blue);
+    --mdb-primary-500-rgb: 38, 139, 210;
+    
+    /* Override MDB Secondary Colors */
+    --mdb-secondary: var(--sol-cyan);
+    --mdb-secondary-rgb: 42, 161, 152;
+    --mdb-secondary-500: var(--sol-green);
+    --mdb-secondary-500-rgb: 133, 153, 0;
+    
+    /* Background Colors */
+    --mdb-bg: var(--sol-base3);
+    --mdb-bg-500: var(--sol-base2);
+    --mdb-body-bg: var(--sol-base3);
+    
+    /* Text Colors */
+    --mdb-body-color: var(--sol-base01);
+    --mdb-body-color-rgb: 88, 110, 117;
+    --mdb-heading-color: var(--sol-base02);
+    --mdb-emphasis-color-rgb: 7, 54, 66;
+    --mdb-primary-text-emphasis: var(--sol-base02);
+    
+    /* Link Colors */
+    --mdb-link-color: var(--sol-blue);
+    --mdb-link-color-rgb: 38, 139, 210;
+    --mdb-link-hover-color: var(--sol-cyan);
+    --mdb-link-hover-color-rgb: 42, 161, 152;
+    
+    /* Navbar Colors */
+    --mdb-navbar-bg: var(--sol-base2);
+    --mdb-navbar-color: var(--sol-base02);
+    --mdb-nav-link-color: var(--sol-base01);
+    --mdb-navbar-brand-color: var(--sol-base02);
+    
+    /* Button Colors */
+    --mdb-button-color: var(--sol-base02);
+    --mdb-outline-button-color: var(--sol-blue);
+    
+    /* Table Colors */
+    --mdb-table-headings-bg: var(--sol-base2);
+    --mdb-table-headings-color: var(--sol-base02);
+    
+    /* Card Colors */
+    --mdb-card-bg: var(--sol-base3);
+    --mdb-card-color: var(--sol-base01);
+    --mdb-surface-bg: var(--sol-base2);
+    --mdb-card-modified-border-color: var(--sol-orange);
+    --mdb-card-very-long-border-color: var(--sol-green);
+    --mdb-card-long-border-color: var(--sol-cyan);
+    --mdb-card-short-border-color: var(--sol-orange);
+    --mdb-card-very-short-border-color: var(--sol-red);
+    
+    /* Price Chart Colors */
+    --local-price-chart-buy-color: var(--sol-green);
+    --local-price-chart-sell-color: var(--sol-red);
+    --local-price-chart-stop-color: var(--sol-orange);
+    --local-price-chart-candle-buy-color: var(--sol-green);
+    --local-price-chart-candle-sell-color: var(--sol-red);
+}
+
+/* Global Styles */
+body {
+    background-color: var(--sol-base3) !important;
+    color: var(--sol-base01) !important;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--sol-base2) !important;
+    border-bottom: 2px solid var(--sol-tan) !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--sol-base02) !important;
+}
+
+.nav-link:hover {
+    color: var(--sol-blue) !important;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--sol-base3) !important;
+    border: 2px solid var(--sol-tan) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.card-header {
+    background-color: var(--sol-base2) !important;
+    border-bottom: 2px solid var(--sol-tan) !important;
+    color: var(--sol-base02) !important;
+    font-weight: 600 !important;
+}
+
+.card-body {
+    color: var(--sol-base01) !important;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--sol-blue) !important;
+    border-color: var(--sol-blue) !important;
+    color: var(--sol-base3) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--sol-cyan) !important;
+    border-color: var(--sol-cyan) !important;
+}
+
+.btn-secondary {
+    background-color: var(--sol-cyan) !important;
+    border-color: var(--sol-cyan) !important;
+    color: var(--sol-base3) !important;
+}
+
+.btn-success {
+    background-color: var(--sol-green) !important;
+    border-color: var(--sol-green) !important;
+}
+
+.btn-danger {
+    background-color: var(--sol-red) !important;
+    border-color: var(--sol-red) !important;
+}
+
+.btn-warning {
+    background-color: var(--sol-yellow) !important;
+    border-color: var(--sol-yellow) !important;
+    color: var(--sol-base02) !important;
+}
+
+/* Table Styles */
+.table {
+    color: var(--sol-base01) !important;
+}
+
+.table thead th {
+    background-color: var(--sol-base2) !important;
+    color: var(--sol-base02) !important;
+    border-bottom: 2px solid var(--sol-tan) !important;
+    font-weight: 600 !important;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid var(--sol-tan) !important;
+}
+
+.table tbody tr:hover {
+    background-color: var(--sol-base2) !important;
+}
+
+/* Form Styles */
+.form-control,
+.form-select {
+    background-color: var(--sol-base3) !important;
+    border: 2px solid var(--sol-tan) !important;
+    color: var(--sol-base01) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--sol-blue) !important;
+    box-shadow: 0 0 0 0.2rem rgba(38, 139, 210, 0.25) !important;
+}
+
+.form-label {
+    color: var(--sol-base02) !important;
+    font-weight: 500 !important;
+}
+
+/* Badge Styles */
+.badge {
+    font-weight: 500 !important;
+}
+
+.badge-primary {
+    background-color: var(--sol-blue) !important;
+}
+
+.badge-success {
+    background-color: var(--sol-green) !important;
+}
+
+.badge-danger {
+    background-color: var(--sol-red) !important;
+}
+
+.badge-warning {
+    background-color: var(--sol-yellow) !important;
+    color: var(--sol-base02) !important;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 8px !important;
+    border-width: 2px !important;
+}
+
+.alert-info {
+    background-color: var(--sol-base2) !important;
+    border-color: var(--sol-blue) !important;
+    color: var(--sol-base02) !important;
+}
+
+.alert-success {
+    background-color: rgba(133, 153, 0, 0.1) !important;
+    border-color: var(--sol-green) !important;
+    color: var(--sol-base02) !important;
+}
+
+.alert-warning {
+    background-color: rgba(181, 137, 0, 0.1) !important;
+    border-color: var(--sol-yellow) !important;
+    color: var(--sol-base02) !important;
+}
+
+.alert-danger {
+    background-color: rgba(220, 50, 47, 0.1) !important;
+    border-color: var(--sol-red) !important;
+    color: var(--sol-base02) !important;
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: var(--sol-base3) !important;
+    border: 2px solid var(--sol-tan) !important;
+}
+
+.modal-header {
+    background-color: var(--sol-base2) !important;
+    border-bottom: 2px solid var(--sol-tan) !important;
+    color: var(--sol-base02) !important;
+}
+
+.modal-body {
+    color: var(--sol-base01) !important;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    background-color: var(--sol-base3) !important;
+    border: 2px solid var(--sol-tan) !important;
+}
+
+.dropdown-item {
+    color: var(--sol-base01) !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--sol-base2) !important;
+    color: var(--sol-base02) !important;
+}
+
+/* Progress Bar Styles */
+.progress {
+    background-color: var(--sol-base2) !important;
+}
+
+.progress-bar {
+    background-color: var(--sol-blue) !important;
+}
+
+/* Text Colors */
+.text-primary {
+    color: var(--sol-blue) !important;
+}
+
+.text-success {
+    color: var(--sol-green) !important;
+}
+
+.text-danger {
+    color: var(--sol-red) !important;
+}
+
+.text-warning {
+    color: var(--sol-yellow) !important;
+}
+
+.text-info {
+    color: var(--sol-cyan) !important;
+}
+
+.text-muted {
+    color: var(--sol-base1) !important;
+}
+
+/* Background Colors */
+.bg-light {
+    background-color: var(--sol-base2) !important;
+}
+
+.bg-dark {
+    background-color: var(--sol-base02) !important;
+}
+
+/* Border Colors */
+.border {
+    border-color: var(--sol-tan) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--sol-base2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--sol-base1);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--sol-base01);
+}
+
+/* Footer */
+footer {
+    background-color: var(--sol-base2) !important;
+    border-top: 2px solid var(--sol-tan) !important;
+    color: var(--sol-base01) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--sol-base02) !important;
+    font-weight: 600 !important;
+}
+
+/* Links */
+a {
+    color: var(--sol-blue) !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: var(--sol-cyan) !important;
+}
+
+/* Code Blocks */
+code, pre {
+    background-color: var(--sol-base2) !important;
+    color: var(--sol-base01) !important;
+    border: 1px solid var(--sol-tan) !important;
+    border-radius: 4px !important;
+}

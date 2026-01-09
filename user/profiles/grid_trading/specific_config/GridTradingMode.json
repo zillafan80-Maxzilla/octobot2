@@ -1,0 +1,62 @@
+{
+    "pair_settings": [
+        {
+            "allow_funds_redispatch": false,
+            "buy_funds": 0,
+            "buy_orders_count": 25,
+            "buy_volume_per_order": 0,
+            "enable_trailing_down": false,
+            "enable_trailing_up": false,
+            "flat_increment": 1000,
+            "flat_spread": 3000,
+            "ignore_exchange_fees": false,
+            "mirror_order_delay": 0,
+            "order_by_order_trailing": true,
+            "pair": "BTC/USDT",
+            "sell_funds": 0,
+            "sell_orders_count": 25,
+            "sell_volume_per_order": 0,
+            "starting_price": 0,
+            "use_existing_orders_only": false
+        },
+        {
+            "allow_funds_redispatch": false,
+            "buy_funds": 0,
+            "buy_orders_count": 25,
+            "buy_volume_per_order": 0,
+            "enable_trailing_down": false,
+            "enable_trailing_up": false,
+            "flat_increment": 1e-05,
+            "flat_spread": 2e-05,
+            "ignore_exchange_fees": false,
+            "mirror_order_delay": 0,
+            "order_by_order_trailing": true,
+            "pair": "ADA/ETH",
+            "sell_funds": 0,
+            "sell_orders_count": 25,
+            "sell_volume_per_order": 0,
+            "starting_price": 0,
+            "use_existing_orders_only": false
+        },
+        {
+            "allow_funds_redispatch": false,
+            "buy_funds": 0,
+            "buy_orders_count": 25,
+            "buy_volume_per_order": 0,
+            "enable_trailing_down": false,
+            "enable_trailing_up": false,
+            "flat_increment": 5,
+            "flat_spread": 10,
+            "ignore_exchange_fees": false,
+            "mirror_order_delay": 0,
+            "order_by_order_trailing": true,
+            "pair": "ETH/USDT",
+            "sell_funds": 0,
+            "sell_orders_count": 25,
+            "sell_volume_per_order": 0,
+            "starting_price": 0,
+            "use_existing_orders_only": false
+        }
+    ],
+    "required_strategies": []
+}

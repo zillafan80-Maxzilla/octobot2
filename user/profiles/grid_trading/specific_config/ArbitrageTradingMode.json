@@ -1,0 +1,11 @@
+{
+    "enable_longs": true,
+    "enable_shorts": true,
+    "exchanges_to_trade_on": [
+        "binance"
+    ],
+    "minimal_price_delta_percent": 0.25,
+    "portfolio_percent_per_trade": 25,
+    "required_strategies": [],
+    "stop_loss_delta_percent": 0.1
+}
